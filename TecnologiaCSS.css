@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: rgb(255, 255, 255);
+ 
+}
+html{
+    height: 525vh;
+   
+}
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    text-align: center;
+   
+}
+.logo img{
+    margin: 0;
+    height: 40px;
+    width: 70px;
+}
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #ff0000; /* Change the color on hover */
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown button{
+    width: 150px;
+    background: none;
+    border: #333;
+    color: #fff;
+    font-size: 20px;
+}
+.dropdown i{
+    margin-left: 10px;
+    font-size: 20px;
+    color: red;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 300px;
+    margin-top: 20px;
+    margin-left: -30px;
+    height: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 0.5s;
+}
+.content a{
+    margin-left: 0 0;
+    padding: 0 0;
+}
+.show {
+display: block;
+}
+
+.content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    margin: 0 0;
+}
+
+.content a:hover {
+    background-color: #555;
+}
+
+/*================================= SECTION1=============================*/
+
+.section1{
+    width: 100%;
+}
+.section1 img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.section1 .text{
+    position: relative;
+}
+.section1 .text h1{
+    color: #fff;
+    font-size: 70px;
+    width: 900px;
+    padding-top: 190px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+.section1 .text p{
+    color: #fff;
+    font-size: 20px;
+    width: 600px;
+    padding-left: 80px;
+}
+
+/*================================= SECTION2 =============================*/
+.section2{
+    margin-top: 20%;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+.section2 .text-item{
+    width: 50%;
+}
+.section2 .text-item h2{
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.section2 .text-item h6{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.section2 .text-item p{
+    font-size: 30px;
+    margin-left: 20px;
+    width: 500px;
+    margin-top: 50px;
+}
+.section2 .img-item{
+    width: 50%;
+}
+.section2 .img-item img{
+    width: 100%;
+}
+
+/*================================= SECTION3 =============================*/
+
+
+.section3{
+    margin-top: 50px;
+    width:100% ;
+    height: 700px;
+}
+.note-info{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.note h1{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.note-info h2{
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 80px;
+    font-size: 30px;
+    width: 30%;
+}
+.note-info p{
+    width: 50%;
+}
+.note-info img{
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/*================================= SECTION4 =============================*/
+.h11{
+    margin-top: 45%;
+    margin-bottom: 2.5%;
+    margin-left: 13%;
+}
+.section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section4 .galeria{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px 230px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+    margin-left: -120px;
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section4 .galeria .imgs:nth-child(1){
+    grid-row: 1/2;
+}
+
+
+.section4 .galeria .imgs:nth-child(5){
+    grid-column: 3/6;
+    grid-row: 1/3;
+}
+.section4 .galeria .imgs:nth-child(7){
+    grid-column: 3/4;
+    grid-row: 3/4;
+}

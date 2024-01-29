@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="News_CSS.css">
+    <title>Week News</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button onclick="toggleContent()">Mais<i class="bi bi-arrow-down-circle-fill"></i>
+                <div  class="content" id="myContent" >
+                    <a href="Austrophilia_PagInicial.html">Home</a>
+                    <a href="News_HTML.html">Espaço</a>
+                    <a href="Humans_HTML.html">Humanos no Espaço</a>
+                    <a href="Solar_System.html">Sistema Solar</a>
+                    <a href="Planets_HTML.html">Astronautas</a>
+                    <a href="TecnologiaHTML.html">Tecnologia</a>
+                    <a href="EspacialHTML.html">Destinos</a>
+                    <a href="#">Configurações</a>
+                </div>
+            </div>
+           
+        </nav>
+        <div class="logo">
+            <img width="50px" height="50px"
+            src="LOGO2.3.png" alt="Company Logo">
+        </div>
+        <nav >
+            <!-- Three options on the right -->
+            <ul>
+                <li><a href="News_HTML.html">Espaço</a></li>
+                <li><a href="Humans_HTML.html">Humanos no Espaço</a>
+                </li>
+                <li><a href="Solar_System.html">Sistema Solar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section1">
+        <div class="conte"> 
+            <div class="options">
+              <ul>
+                <button>Tudo</button>
+                <button>Física</button>
+                <button>Terra</button>
+                <button>Clima</button>
+                <button>Tecnologia</button>
+                <button>Humanidade</button>
+
+              </ul>
+        </div>
+    </div>
+       <div class="conte2">
+        <div class="news">
+            <img src="butterfly.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Efeito borboleta</h1>
+                <p>Entenda o efeito borboleta</p>
+                <button onclick="openFullNews(1)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews1" class="full-news">
+            <img src="butterfly.jpg" alt="News 1">
+            <h2>Efeito Borboleta</h2>
+            <p>
+                O "Efeito Borboleta" é uma metáfora fascinante que ilustra a sensibilidade das condições iniciais em sistemas dinâmicos complexos. Essa teoria sugere que pequenas alterações no início de um sistema podem ter consequências significativas e imprevisíveis ao longo do tempo. O termo deriva da ideia de que o bater de asas de uma borboleta em um lugar pode desencadear uma cadeia de eventos que, eventualmente, levará a mudanças drásticas em outro local.
+                                Essa teoria destaca a interconexão e a interdependência de eventos em um mundo complexo. Pequenos detalhes, por mais insignificantes que possam parecer inicialmente, têm o potencial de desencadear uma cascata de efeitos, alterando completamente o curso futuro de um sistema.
+                                O "Efeito Borboleta" nos lembra da complexidade intrínseca da vida e da necessidade de considerar as ramificações de nossas ações. Em última análise, destaca a importância de abordagens cuidadosas e pensamento de longo prazo em face da incerteza inerente aos sistemas dinâmicos.</p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(2)">Próxima</button>
+            </div>
+        </div>
+        <div class="news" >
+            <img src="BlockHole.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Buracos Negros</h1>
+                <p>Entenda o que são os buracos negros</p>
+                <button onclick="openFullNews(2)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews2" class="full-news">
+            <img src="BlockHole.jpg" alt="News 2">
+            <h2>Buracos Negros</h2>
+            <p>Os buracos negros, fenômenos cósmicos fascinantes e enigmáticos, são regiões do espaço-tempo tão densas que nada, nem mesmo a luz, consegue escapar de sua atração gravitacional. Essas misteriosas entidades surgem quando uma estrela massiva esgota seu combustível nuclear e colapsa sob sua própria gravidade.
+
+                A fronteira de um buraco negro, conhecida como horizonte de eventos, é um ponto de não retorno, além do qual nada pode escapar da força gravitacional avassaladora. O estudo desses objetos celestes desafia nossa compreensão convencional da física, pois a gravidade se torna extraordinariamente intensa em sua proximidade.
+                
+                Os buracos negros vêm em diferentes tamanhos, desde pequenos buracos negros estelares até buracos negros supermassivos encontrados no centro de galáxias. Apesar de sua natureza evasiva, sua presença é inferida pela observação de efeitos gravitacionais em objetos vizinhos.
+                
+                A compreensão dos buracos negros continua a ser um dos grandes desafios da astrofísica moderna. Esses objetos cósmicos não apenas revelam os extremos da física, mas também desempenham um papel crucial na evolução e estrutura do universo.</p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(3)">Próxima</button>
+            </div>
+        </div>
+        <div class="news">
+            <img src="tecnologia.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Tecnologia</h1>
+                <p>Aprenda mais sobre as novas tecnoligas</p>
+                <button onclick="openFullNews(3)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews3" class="full-news">
+            <img src="Humans3.jpg" alt="News 3">
+            <h2>Tecnologias</h2>
+            <p>A exploração espacial, impulsionada pela inovação tecnológica, representa o ápice da engenhosidade humana. Desde os primeiros voos tripulados até às estações espaciais modernas, a tecnologia desempenha um papel crucial na capacidade da humanidade de alcançar as estrelas. Satélites avançados orbitam a Terra, proporcionando comunicações globais, observação da Terra e avanços científicos. As espaçonaves exploram planetas distantes, sondando mistérios cósmicos. A tecnologia, como sistemas de propulsão avançados e trajes espaciais inovadores, permite aos astronautas realizar caminhadas espaciais e habitar estações espaciais por períodos prolongados.
+                 Esses feitos tecnológicos representam não apenas conquistas científicas, mas também a expressão da curiosidade inata e da busca incessante do conhecimento por parte da humanidade no vasto cosmos.</p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(4)">Próxima</button>
+            </div>
+        </div>
+        <div class="news">
+            <img src="Humans2.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Estação Espacial</h1>
+                <p>Como estão os humanos que estão na estação espacial?</p>
+                <button onclick="openFullNews(4)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews4" class="full-news">
+            <img src="Space.jpg" alt="News 1">
+            <h2>Como estão os astronaltas que estão na estação espacial?</h2>
+            <p>No silêncio majestoso do espaço, seres humanos flutuam como astronautas na Estação Espacial Internacional (EEI), uma obra-prima da engenharia orbital. Esses exploradores cósmicos vivem e trabalham em um ambiente único, desafiando a gravidade terrestre. Em um ballet de microgravidade, eles realizam experimentos científicos, consertam equipamentos avançados e contemplam nosso planeta azul do alto.
+
+                A estadia na estação é uma experiência que transcende fronteiras. Astronautas de diferentes nacionalidades colaboram em harmonia, representando a conquista da humanidade no espaço. Cada missão, um capítulo na exploração espacial, contribui para nosso entendimento do cosmos e prepara o caminho para futuras jornadas interplanetárias.
+                
+                Na Estação Espacial, a fragilidade da Terra é evidente, e a colaboração global torna-se vital. Esses homens e mulheres, flutuando no vazio sideral, personificam a coragem e a determinação humanas diante dos desafios cósmicos, inspirando as gerações futuras a alcançarem novas alturas no vasto e infinito universo.</p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(5)">Próxima</button>
+            </div>
+        </div>
+        <div class="news">
+            <img src="jupiter.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Aneis de Jupiter</h1>
+                <p>Entenda os aneis de Jupiter</p>
+                <button onclick="openFullNews(5)">Leia mais</button>
+            </div>
+            </div> 
+            <div id="fullNews5" class="full-news">
+                <img src="jupiter.jpg" alt="News 2">
+                <h2>Aneis de Jupiter</h2>
+                <p>Os anéis de Júpiter são uma característica fascinante deste gigante gasoso do nosso sistema solar. Descobertos pela sonda espacial Voyager 1 em 1979, esses anéis foram inicialmente uma surpresa, pois antes disso, apenas Saturno era conhecido por ter anéis visíveis.
+
+                    Os anéis de Júpiter são tênues e compostos principalmente de poeira. Ao contrário dos imponentes anéis de Saturno, os de Júpiter são difíceis de serem observados da Terra devido à sua baixa luminosidade. Acredita-se que esses anéis sejam formados por partículas liberadas por pequenas luas próximas, como Adrasteia e Metis, devido à sua interação gravitacional com Júpiter.
+                    
+                    Os anéis de Júpiter são um objeto de estudo intrigante para os cientistas, proporcionando insights sobre a dinâmica do sistema joviano. Embora não sejam tão proeminentes quanto os de Saturno, os anéis de Júpiter continuam a desafiar nossa compreensão do complexo e maravilhoso universo que nos rodeia.</p>
+                <div class="navigation-buttons">
+                    <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                    <button class="next-button" onclick="showNextNews(6)">Próxima</button>
+                </div>
+            </div>
+            
+        <div class="news">
+            <img src="Buraco.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Buracos de Minhoca</h1>
+                <p>Buracos de Minhoca? Existem?</p>
+                <button onclick="openFullNews(6)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews6" class="full-news">
+            <img src="Buraco.jpg" alt="News 3">
+            <h2>Buracos de Minhoca
+            </h2>
+            <p>Os buracos de minhoca, também conhecidos como pontes de Einstein-Rosen, são fascinantes conceitos teóricos na física. Propostos pela primeira vez na teoria da relatividade geral de Albert Einstein e Nathan Rosen, essas estruturas hipotéticas são como túneis que conectam diferentes regiões do espaço-tempo. Imagine um verme atravessando uma maçã - os buracos de minhoca seriam como atalhos que encurtam a distância entre dois pontos distantes no universo.
+
+                Essas passagens cósmicas levantam questões intrigantes sobre viagens interestelares e a possibilidade de explorar o cosmos de maneiras antes inimagináveis. Embora ainda seja teoria, a especulação sobre a existência de buracos de minhoca continua a inspirar a imaginação e a investigação científica, oferecendo um vislumbre emocionante das complexidades do espaço-tempo.</p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(7)">Próxima</button>
+            </div>
+        </div>
+        <div class="news">
+            <img src="Tempo.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Viagem no Tempo</h1>
+                <p>Afinal, é posssível viajar no tempo?</p>
+                <button onclick="openFullNews(7)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews7" class="full-news">
+            <img src="Tempo.jpg" alt="News 1">
+            <h2>Viagem no tempo</h2>
+            <p>Em um universo repleto de mistérios e possibilidades, a ideia de viagem no tempo sempre cativou a imaginação humana. Imagine-se capaz de voltar aos momentos cruciais da história ou antecipar-se ao futuro, desvendando os enigmas que o tempo guarda. Contudo, as teorias que cercam essa possibilidade são complexas e desafiam nossa compreensão.
+
+                A física quântica explora conceitos como buracos de minhoca e dilatação temporal, oferecendo uma perspectiva fascinante sobre a viabilidade das viagens temporais. Ainda assim, permanece como um tema envolto em debates acalorados entre cientistas e entusiastas.
+                
+                Se pudéssemos manipular o tempo, que impacto teria em nossas vidas e na trajetória da humanidade? Essa jornada pelo continuum temporal continua a inspirar a ficção científica, enquanto nós, meros observadores do presente, contemplamos o desconhecido que o tempo guarda em suas dobras.</p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(8)">Próxima</button>
+            </div>
+        </div>
+        <div class="news">
+            <img src="Clima.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Clima da Terra</h1>
+                <p>Entenda o clima do nosso planeta</p>
+                <button onclick="openFullNews(8)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews8" class="full-news">
+            <img src="Clima.jpg" alt="News 2">
+            <h2>Clima na Terra</h2>
+            <p>A Terra enfrenta desafios climáticos significativos neste momento. O aumento das emissões de gases de efeito estufa tem contribuído para mudanças climáticas drásticas, manifestando-se em eventos extremos, como ondas de calor intensas, furacões mais poderosos e padrões de precipitação imprevisíveis.
+
+                O derretimento acelerado das calotas polares e o aumento do nível do mar ameaçam comunidades costeiras em todo o mundo. A perda de biodiversidade e a acidificação dos oceanos também são preocupações crescentes. É imperativo que a sociedade global adote medidas sustentáveis para mitigar esses impactos, incluindo a transição para fontes de energia renovável, a preservação de ecossistemas críticos e a adoção de práticas agrícolas mais sustentáveis.
+                
+                A colaboração internacional é essencial para enfrentar esses desafios e criar um futuro mais resiliente e sustentável para o nosso planeta.              
+                </p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(9)">Próxima</button>
+            </div>
+        </div>
+        
+        <div class="news">
+            <img src="Eath2.jpg" alt="" srcset="">
+            <div class="text">
+                <h1>Planeta Terra</h1>
+                <p>Conheça nosso planeta</p>
+                <button onclick="openFullNews(9)">Leia mais</button>
+            </div>
+        </div>
+        <div id="fullNews9" class="full-news">
+            <img src="Eath2.jpg" alt="News 3">
+            <h2>Planeta Terra</h2>
+            <p>
+                A Terra, nosso amado planeta, é um oásis cósmico de vida e maravilhas. Com uma diversidade de ecossistemas, ela abriga vastas florestas, oceanos profundos e vastos desertos. Nossos campos verdes sustentam uma incrível variedade de vida, desde os menores insetos até majestosos mamíferos. Os oceanos, fonte de vida vital, abrigam uma miríade de criaturas fascinantes.
+                
+                O clima, com suas estações distintas, molda paisagens e influencia a flora e a fauna. A Terra é protegida por uma camada frágil, a atmosfera, que nos proporciona ar puro para respirar. Infelizmente, a ação humana tem impactos negativos, ameaçando esse delicado equilíbrio. A conscientização ambiental torna-se crucial para preservar a beleza única e a sustentabilidade de nosso lar. Juntos, devemos cuidar deste planeta, para as gerações presentes e futuras.
+                         
+                </p>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="closeFullNews()">Voltar</button>
+                <button class="next-button" onclick="showNextNews(1)">Próxima</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <script src="newFile.js"></script>
+     <script src="News_JS.js"></script>
+</body>
+</html>
